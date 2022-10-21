@@ -11,8 +11,11 @@ class SolarSystem extends React.Component {
         <Title headline="Planetas" />
         <div>
           {planets.map((planet) => (
-            // eslint-disable-next-line max-len
-            <PlanetCard key={ planet.name } planetName={ planet.name } planetImage={ planet.image } />
+            <PlanetCard
+              key={ planet.name }
+              planetName={ planet.name }
+              planetImage={ planet.image }
+            />
           ))}
         </div>
         <div />
